@@ -10,7 +10,7 @@
                     "colname": "level3"
                 },
                 {
-                    "name": "Friends/Relatives",
+                    "name": "Friends",
                     "group": "A",
                     "value": 15.6,
                     "colname": "level3"
@@ -28,7 +28,7 @@
                     "colname": "level3"
                 },
                 {
-                    "name": "Private Party",
+                    "name": "Private",
                     "group": "A",
                     "value": 9.36,
                     "colname": "level3"
@@ -52,7 +52,7 @@
                     "colname": "level3"
                 },
                 {
-                    "name": "Friends/Relatives",
+                    "name": "Friends",
                     "group": "B",
                     "value": 24.024,
                     "colname": "level3"
@@ -70,7 +70,7 @@
                     "colname": "level3"
                 },
                 {
-                    "name": "Private Party",
+                    "name": "Private",
                     "group": "B",
                     "value": 5.148,
                     "colname": "level3"
