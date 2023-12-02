@@ -2,7 +2,7 @@
     <div class="Homepage">
         <h1 class="title">Pet Economy</h1>
         <div class="row">
-            <div class="col">
+            <div class="col-md-3">
                 <div class="home-stat-card">
                     <div class="d-flex justify-content-between">
                         <div class="stat-title">Pet ownership</div>
@@ -11,7 +11,7 @@
                     <div class="stat-number">90.5M</div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-md-3">
                 <div class="home-stat-card">
                     <div class="d-flex justify-content-between">
                         <div class="stat-title">Shelter Animal Trend</div>
@@ -21,7 +21,7 @@
                 </div>
             </div>
 
-            <div class="col">
+            <div class="col-md-3">
                 <div class="home-stat-card">
                     <div class="d-flex justify-content-between">
                         <div class="stat-title">Pet Market Sale</div>
@@ -30,7 +30,7 @@
                     <div class="stat-number">$143.6B</div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-md-3">
                 <div class="home-stat-card">
                     <div class="d-flex justify-content-between">
                         <div class="stat-title">Animal Caretaker Peak</div>
@@ -96,13 +96,33 @@
                 </div>
             </div>
         </div>
+
+        <div class="stat-card" style="margin-top: 20px;">
+            <div class="row">
+                <div class="description">
+                    <h5>Description:</h5>
+                    <text>
+                    This Dashboard explores the multifaceted pet economy with a focus on cats and dogs in the United States. We examine the trends and dynamics of pet ownership, analyzing how demographic and economic factors influence the rising number of cat and dog owners. A significant portion of the study is dedicated to understanding the flow of animals into and out of shelters.
+                    
+                    </text>
+                </div>
+                
+                <div class="group" style="margin-top: 10px;">
+                    <h5>Group Members:</h5>
+                    <text>
+                        Gonglin Chen, Joanna Xiao, Chuqiao Wang, Rui Xue
+                    </text>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
 <style>
-
-body {
-    background-color: blue;
+body{
+    width: 100%;
+    margin: 0;
+    overflow-y: scroll;
 }
 
 .title {
@@ -118,6 +138,7 @@ body {
 
 .container {
     height: 100%;
+    width: 100vh;
 }
 
 .card-title {

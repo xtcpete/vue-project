@@ -16,7 +16,6 @@ import { RouterLink, RouterView } from 'vue-router'
       </nav>
     </div>
   </header>
-
   <RouterView class="subpage" />
 </template>
 
@@ -25,6 +24,7 @@ header {
   line-height: 1.5;
   max-height: 100vh;
 }
+
 
 .logo {
   display: block;
@@ -79,22 +79,22 @@ nav a:first-of-type {
     text-align: left;
     margin-left: -1rem;
     font-size: 1rem;
-
     padding: 1rem 0;
     margin-top: 1rem;
   }
 
   .subpage{
-    width: 80%;
+    width: 100vh;
     position: absolute;
     left: 20%;
-    top: -80%;
+    top: -100%;
     overflow: hidden;
+    padding-bottom: 5%;
   }
 
   body{
     width: 100vh;
-    overflow: hidden;
+    height: fit-content;
     margin: 0;
     top: 0;
     display: flex;

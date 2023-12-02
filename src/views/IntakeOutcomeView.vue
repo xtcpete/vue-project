@@ -738,7 +738,7 @@ function createPieChart(data, id='intake') {
             const colNum = 1;
             const col = i % colNum;
             const row = Math.floor(i / colNum);
-            const horz = col * legWidth - width / 2 + 50;
+            const horz = col * legWidth - width / 2 + 10;
             const vert = row * legHeight + height / 2 - 80;
             return 'translate(' + horz + ',' + vert + ')';
         });
@@ -763,6 +763,20 @@ function createPieChart(data, id='intake') {
 .container{
     height: 100%;
     width: 100vh;
+}
+
+.stat-card {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    /*align-items: flex;*/
 }
 
 .card-title{

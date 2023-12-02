@@ -40,14 +40,14 @@
         <div class="card">
             <div class="card-body">
                 <h4>Number of U.S. Households That Own a Pet, by Type of Animal (millions)</h4>
-                <svg id="households" width=1000 height=400></svg>
+                <svg id="households" width=100% height=400></svg>
             </div>
         </div>
         <br>
         <div class="card">
             <div class="card-body">
                 <h4>Sources of Dogs and Cats (millions)</h4>
-                <svg id="sources" width=1000 height=600></svg>
+                <svg id="sources" width=100% height=600></svg>
             </div>
         </div>
   </div>
@@ -60,9 +60,14 @@ export default {
   name: 'OwenershipChart',
   mounted: function () {
     d3.csv("households.csv").then(function (data) {
-    const margin = { top: 10, right: 170, bottom: 30, left: 50 },
-        width = 1000 - margin.left - margin.right,
-        height = 400 - margin.top - margin.bottom;
+
+    var height =document.getElementById("households").clientHeight;
+    var width = document.getElementById("households").clientWidth;
+    
+    const margin = { top: 10, right: 150, bottom: 30, left: 50 }
+        
+    width = width - margin.left - margin.right,
+    height = height - margin.top - margin.bottom;
 
     const svg = d3.select("#households")
         .append("svg")
@@ -164,9 +169,13 @@ export default {
 
 d3.json("sources.json").then(function (data) {
 
-    const margin = { top: 10, right: 10, bottom: 10, left: 10 },
-        width = 1000 - margin.left - margin.right,
-        height = 600 - margin.top - margin.bottom;
+    var height =document.getElementById("sources").clientHeight;
+    var width = document.getElementById("sources").clientWidth;
+
+    const margin = { top: 10, right:0, bottom: 10, left: 10 }
+
+    width = width - margin.left - margin.right,
+    height = height - margin.top - margin.bottom;
 
     const svg = d3.select("#sources")
         .append("svg")
@@ -253,6 +262,20 @@ d3.json("sources.json").then(function (data) {
 .container{
     height: 100%;
     width: 100vh;
+}
+
+.stat-card {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    /*align-items: flex;*/
 }
 
 .card-title{

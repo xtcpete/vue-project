@@ -410,6 +410,7 @@ d3.select("#yearSelector")
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 100%;
     /*align-items: flex;*/
 }
 

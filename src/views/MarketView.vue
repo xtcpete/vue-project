@@ -47,18 +47,18 @@
     </div>
 
     <!-- Row for Line Chart & Pie Chart -->
-    <div class="row">
-      <div class="col">
+    <div class="row" style="margin-bottom: 20px;">
+      <div class="col-md-6">
         <!-- Line Chart -->
-        <div class="chart-container">
+        <div class="chart-container" style="height: 100%;">
           <div class="chart-title chart-header">Market Trend</div>
           <canvas id="line-chart" width="480" height="459"></canvas>
         </div>
       </div>
 
-      <div class="col">
+      <div class="col-md-6">
         <!-- Pie Chart -->
-        <div class="chart-container">
+        <div class="chart-container" style="height: 100%;">
           <div class="chart-header">
             <div class="chart-title">Market Segment</div>
             <div class="chart-year">
@@ -84,7 +84,7 @@
     <!-- Bar Chart (DIV) -->
     <div class="row">
       <div class="col">
-        <div class="chart-container">
+        <div class="chart-container" style="max-height: 600px; padding-bottom: 50px;">
           <div class="chart-header">
             <div class="chart-title my-3">2023 Pet Spending Patterns</div>
           </div>
@@ -316,13 +316,16 @@ function fetchBarChartData() {
             display: true,
             text: 'Dog vs. Cat Owners: Annual Spending Breakdown'
           }
-        }
+        },
+        maintainAspectRatio: false
       };
       
 
       if (barChart) {
+        console.log('destroying old chart');
         barChart.destroy(); // Destroy the old chart instance before creating a new one
       }
+
 
       barChart = new Chart(barChartCanvas, {
         type: 'bar',
@@ -336,7 +339,8 @@ function fetchBarChartData() {
 // Initial fetch of the bar chart data
 fetchBarChartData();
 
-  }
+}
+
 }
 </script>
 
@@ -430,6 +434,8 @@ fetchBarChartData();
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-height: 10%;
+  height: 100%;
   /*align-items: flex;*/
 }
 
