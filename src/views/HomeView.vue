@@ -43,75 +43,79 @@
 
         <br>
 
-        <div class="stat-card">
-            <div class="row">
-                <div class="col-sm-4">
-                    <h6>States with the largest net outcome of sheltered animals</h6>
-                    <table class="table">
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Texas</td>
-                                <td style="color:green">&darr; 119721</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>California</td>
-                                <td style="color:green">&darr; 109209</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Arizona</td>
-                                <td style="color:green">&darr; 66770</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <br>
-                    <br>
-                    <h6>States with the largest net intake of sheltered animals</h6>
-                    <table class="table">
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>New York</td>
-                                <td style="color:red">&uarr; 10807</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Washington</td>
-                                <td style="color:red">&uarr; 10346</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Minnesota</td>
-                                <td style="color:red">&uarr; 1894</td>
-                            </tr>
-                        </tbody>
-                    </table>
+        <div style="height: fit-content;">
+            <div class="stat-card" style="max-height: 100%;">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h6>States with the largest net outcome of sheltered animals</h6>
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Texas</td>
+                                    <td style="color:green">&darr; 119721</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>California</td>
+                                    <td style="color:green">&darr; 109209</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Arizona</td>
+                                    <td style="color:green">&darr; 66770</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <br>
+                        <h6>States with the largest net intake of sheltered animals</h6>
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>New York</td>
+                                    <td style="color:red">&uarr; 10807</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Washington</td>
+                                    <td style="color:red">&uarr; 10346</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Minnesota</td>
+                                    <td style="color:red">&uarr; 1894</td>
+                                </tr>
+                            </tbody>
+                        </table>
 
 
-                </div>
-                <div class="col-sm-8">
-                    <img src="../assets/Annual change-All-2022.png" width="100%">
+                    </div>
+                    <div class="col-sm-8">
+                        <img src="../assets/Annual change-All-2022.png" width="100%">
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="stat-card" style="margin-top: 20px;">
-            <div class="row">
-                <div class="description">
-                    <h5>Description:</h5>
-                    <text>
-                    This Dashboard explores the multifaceted pet economy with a focus on cats and dogs in the United States. We examine the trends and dynamics of pet ownership, analyzing how demographic and economic factors influence the rising number of cat and dog owners. A significant portion of the study is dedicated to understanding the flow of animals into and out of shelters.
+        <div style="max-height: fit-content;">
+            <div class="stat-card" style="margin-top: 20px;">
+                <div class="row">
+                    <div class="description">
+                        <h5>Description:</h5>
+                        <text>
+                        This Dashboard explores the multifaceted pet economy with a focus on cats and dogs in the United States. We examine the trends and dynamics of pet ownership, analyzing how demographic and economic factors influence the rising number of cat and dog owners. A significant portion of the study is dedicated to understanding the flow of animals into and out of shelters.
+                        
+                        </text>
+                    </div>
                     
-                    </text>
-                </div>
-                
-                <div class="group" style="margin-top: 10px;">
-                    <h5>Group Members:</h5>
-                    <text>
-                        Gonglin Chen, Chuqiao Wang, Joanna Xiao, and Rui Xue
-                    </text>
+                    <div class="group" style="margin-top: 10px;">
+                        <h5>Group Members:</h5>
+                        <text>
+                            Gonglin Chen, Chuqiao Wang, Joanna Xiao, and Rui Xue
+                        </text>
+                    </div>
                 </div>
             </div>
         </div>
