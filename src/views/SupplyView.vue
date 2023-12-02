@@ -271,12 +271,12 @@ export default {
             legend.append('rect')
                 .attr('width', 18)
                 .attr('height', 18)
-                .attr('x', -150)
+                .attr('x', -(width / 2) + 20)
                 .attr('y', function (d, i) { return -150 + i * 30 })
                 .style('fill', function (d, i) { return legendColors[i]; });
 
             legend.append('text')
-                .attr('x', -130)
+                .attr('x', -(width / 2) + 40)
                 .attr('y', function (d, i) { return -140 + i * 30 })
                 .attr('dy', '.35em')
                 .style('text-anchor', 'start')
