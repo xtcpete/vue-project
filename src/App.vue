@@ -85,9 +85,10 @@ nav a:first-of-type {
 
   .subpage{
     width: 120vh;
-    position: absolute;
-    left: 20%;
-    top: -100%;
+    margin-left: 50px;
+    position: relative;
+    left: 0;
+    top: 0;
     overflow: hidden;
     padding-bottom: 5%;
   }

@@ -92,7 +92,7 @@
 
                 </div>
                 <div class="col-sm-8">
-                    <img src="../assets/Annual change-All-2022.png">
+                    <img src="../assets/Annual change-All-2022.png" width="100%">
                 </div>
             </div>
         </div>
