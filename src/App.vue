@@ -93,7 +93,7 @@ nav a:first-of-type {
   }
 
   body{
-    width: 100vh;
+    width: 120vh;
     height: fit-content;
     margin: 0;
     top: 0;
