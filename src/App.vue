@@ -84,7 +84,7 @@ nav a:first-of-type {
   }
 
   .subpage{
-    width: 100vh;
+    width: 120vh;
     position: absolute;
     left: 20%;
     top: -100%;
