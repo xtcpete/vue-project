@@ -39,7 +39,7 @@
 
         <div class="row">
             <div class="col-md-6" id="chart1-div">
-                <div class="card">
+                <div class="card" style="height: 100%;">
                     <div class="card-body">
                         <h6> Number of Employees vs PPI (base=100, 2012)</h6>
                         <svg id="doubleLineChart" width="100%" height=450></svg>
@@ -47,7 +47,7 @@
                 </div>
             </div>
             <div class="col-md-6" id="chart2-div">
-                <div class="card">
+                <div class="card" style="height: 100%;">
                     <div class="card-body">
                 <label for="yearSelector">Select Year:</label>
                 <select class="form-control" id="yearSelector">
@@ -57,8 +57,8 @@
                     <option>2021</option>
                     <option selected>2022</option>
                 </select>
-                <h6>Employee Sex Distribution</h6>
-                <svg id="pieChart" width="100%" height=400></svg>
+                <h6 style="margin-top: 20px;">Employee Sex Distribution</h6>
+                    <svg id="pieChart" width="100%" height=350></svg>
                 </div>
                 </div>
             </div>
@@ -196,11 +196,8 @@ export default {
             var years = employeeBySex.map(d => d.year);
             var selectedData = employeeBySex.find(d => d.year === year);
 
-
-            // Create or update the donut chart
-            var margin = { top: 20, right: 20, bottom: 20, left: 20 };
-            var width = 400 - margin.left - margin.right;
-            var height = 400 - margin.top - margin.bottom;
+            var width = document.getElementById("pieChart").clientWidth;
+            var height = document.getElementById("pieChart").clientHeight;
 
 
             var pie = d3.pie().value(d => d);

@@ -110,7 +110,7 @@
                 <div class="group" style="margin-top: 10px;">
                     <h5>Group Members:</h5>
                     <text>
-                        Gonglin Chen, Joanna Xiao, Chuqiao Wang, Rui Xue
+                        Gonglin Chen, Chuqiao Wang, Joanna Xiao, and Rui Xue
                     </text>
                 </div>
             </div>
