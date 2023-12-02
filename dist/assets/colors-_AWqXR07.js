@@ -1,0 +1,1 @@
+function o(t){if(!t.ok)throw new Error(t.status+" "+t.statusText);if(!(t.status===204||t.status===205))return t.json()}function a(t,n){return fetch(t,n).then(o)}function c(t){for(var n=t.length/6|0,u=new Array(n),r=0;r<n;)u[r]="#"+t.slice(r*6,++r*6);return u}export{c,a as j};
