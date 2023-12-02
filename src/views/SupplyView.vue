@@ -73,6 +73,8 @@ export default {
     name: 'SupplyChart',
     mounted: function () {
         d3.csv("employees.csv").then(function (data) {
+            d3.select('#doubleLineChart').selectAll("*").remove();
+
             var margin = { top: 20, right: 20, bottom: 50, left: 60 };
             var width = document.getElementById("doubleLineChart").clientWidth - margin.left - margin.right;
             var height = document.getElementById("doubleLineChart").clientHeight - margin.top - margin.bottom;
@@ -185,6 +187,8 @@ export default {
 
         // Function to update the chart based on selected year
         function updateChart(year) {
+            d3.select('#pieChart').selectAll("*").remove();
+
             var employeeBySex = [
                 { "year": 2018, "female": 83.45, "male": 54.58 },
                 { "year": 2019, "female": 87.35, "male": 52.42 },

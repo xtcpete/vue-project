@@ -60,6 +60,8 @@ export default {
   name: 'OwenershipChart',
   mounted: function () {
     d3.csv("households.csv").then(function (data) {
+    
+    d3.select("#households").selectAll("*").remove();
 
     var height =document.getElementById("households").clientHeight;
     var width = document.getElementById("households").clientWidth;
@@ -168,6 +170,8 @@ export default {
 })
 
 d3.json("sources.json").then(function (data) {
+
+    d3.select("#sources").selectAll("*").remove();
 
     var height =document.getElementById("sources").clientHeight;
     var width = document.getElementById("sources").clientWidth;
